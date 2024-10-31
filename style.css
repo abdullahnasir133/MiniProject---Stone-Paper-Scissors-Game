@@ -1,0 +1,98 @@
+/* Global Styles */
+:root {
+    --primary-color: #081b31;
+    --text-color: #333;
+    --background-color: #f0f2f5;
+    --white: #fff;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  /* Choice Section */
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+  }
+  
+  .choice img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Scoreboard Section */
+  .score-board {
+    display: flex;
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Message Section */
+  .msg-container {
+    margin-top: 3rem;
+  }
+  
+  #msg {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+  
